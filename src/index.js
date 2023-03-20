@@ -46,11 +46,13 @@ console.log('Proje açıldı!')
 
 const links = document.querySelectorAll("a");
 const namess =[
-  "servisler","ürünler","vizyon","özellikler","hakkımızda","iletişim"
+  "Servisler","Ürünler","Vizyon","Özellikler","Hakkımızda","İletişim"
 ];
 for (let i=0;i<namess.length;i++){
   links[i].textContent=namess[i];
 }
+const butt=document.querySelector("button");
+butt.textContent=("Başlayın");
 const firsts=document.querySelector("h1");
 firsts.textContent=("BU DOOM MÜKEMMEL");
 
@@ -73,3 +75,12 @@ for(let i=0;i<lastarray.length;i++){
 }
 const lastword=document.querySelector("footer a")
 lastword.textContent=("Copyright Bir Şirket Sitesi 2022");
+
+
+const img1=document.querySelector(".logo");
+img1.src=("../mocks/img/logo.png");
+const img2=document.querySelector(".cta img");
+img2.src=("../mocks/img/cta.png");
+
+const img3=document.querySelector(".middle-img");
+img3.src=("../mocks/img/accent.png");
