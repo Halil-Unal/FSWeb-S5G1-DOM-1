@@ -43,3 +43,33 @@ console.log('Proje açıldı!')
 
 
 /* Kodlar Buradan aşağıya */
+
+const links = document.querySelectorAll("a");
+const namess =[
+  "servisler","ürünler","vizyon","özellikler","hakkımızda","iletişim"
+];
+for (let i=0;i<namess.length;i++){
+  links[i].textContent=namess[i];
+}
+const firsts=document.querySelector("h1");
+firsts.textContent=("BU DOOM MÜKEMMEL");
+
+const first=document.querySelectorAll(".text-content h4")
+const firstpage=["Özellikler","Hakkında","Servisler","Ürünler","vizyon"];
+for(let i=0;i<firstpage.length;i++){
+first[i].textContent=firstpage[i];
+}
+const firstp=document.querySelectorAll(".text-content p")
+const firstppage=["Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Servisler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Ürünler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Vizyon içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis."];
+for (let i=0;i<firstppage.length;i++){
+  firstp[i].textContent=firstppage[i];
+}
+const last =document.querySelector(".contact h4");
+last.textContent=("İletişim");
+const lastp=document.querySelectorAll(".contact p");
+const lastarray=["100 numara Bilmem ne sokak Ankara'da bir semt, Türkiye","+90 (123) 456-7899","satis@birsirketsitesi.com.tr"];
+for(let i=0;i<lastarray.length;i++){
+  lastp[i].textContent=lastarray[i];
+}
+const lastword=document.querySelector("footer a")
+lastword.textContent=("Copyright Bir Şirket Sitesi 2022");
