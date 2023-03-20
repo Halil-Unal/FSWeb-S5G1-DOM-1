@@ -51,6 +51,8 @@ const namess =[
 for (let i=0;i<namess.length;i++){
   links[i].textContent=namess[i];
 }
+
+
 const butt=document.querySelector("button");
 butt.textContent=("Başlayın");
 const firsts=document.querySelector("h1");
@@ -60,7 +62,10 @@ const first=document.querySelectorAll(".text-content h4")
 const firstpage=["Özellikler","Hakkında","Servisler","Ürünler","vizyon"];
 for(let i=0;i<firstpage.length;i++){
 first[i].textContent=firstpage[i];
+
+
 }
+
 const firstp=document.querySelectorAll(".text-content p")
 const firstppage=["Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.","Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Servisler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Ürünler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis.","Vizyon içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metusscelerisque quis."];
 for (let i=0;i<firstppage.length;i++){
@@ -78,9 +83,31 @@ lastword.textContent=("Copyright Bir Şirket Sitesi 2022");
 
 
 const img1=document.querySelector(".logo");
-img1.src=("../mocks/img/logo.png");
+img1.src=("http://localhost:9000/img/logo.png");
+
 const img2=document.querySelector(".cta img");
-img2.src=("../mocks/img/cta.png");
+img2.src=("http://localhost:9000/img/cta.png");
 
 const img3=document.querySelector(".middle-img");
-img3.src=("../mocks/img/accent.png");
+img3.src=("http://localhost:9000/img/accent.png");
+/*
+ const myimages=document.querySelectorAll("img");
+const logokeys=Object.keys(siteContent.images);
+for(let i=0;i<logokeys.length;i++){
+  myimages[i].src=siteContent.images[logokeys[i]];
+}
+*/
+const footerA=document.querySelector("footer a");
+footerA.classList.add("bold");
+
+const firstname=document.querySelectorAll("header nav a");
+for (let i=0;i<firstname.length;i++){
+  firstname[i].classList.add("italic")
+}
+
+
+
+    const thirdname=document.querySelectorAll(".contact p");
+    for (let i=0;i<thirdname.length;i++){
+      thirdname[i].classList.add("italic");
+    }
